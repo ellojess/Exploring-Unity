@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{78C82D7E-29F2-7A62-506D-975792BD3765}|">
+  <MonoDevelop.Ide.ItemProperties.2__Terminal__Hacker PreferredExecutionTarget="c7445b78-a0ec-4527-8487-03eb37f3b7a3" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hacker.cs">
+    <Files>
+      <File FileName="Assets/Hacker.cs" Line="62" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2_Terminal_Hacker" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Hacker.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
