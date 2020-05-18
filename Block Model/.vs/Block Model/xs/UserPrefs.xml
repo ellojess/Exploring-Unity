@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{6230C23C-9864-A6B8-56C3-ECEB105AC997}|">
+  <MonoDevelop.Ide.ItemProperties.Block_220Model PreferredExecutionTarget="21a196a5-9f89-4072-8f70-acdb1f9c84ab" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Introducer.cs">
+    <Files>
+      <File FileName="Assets/Introducer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Block Model" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Introducer.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Block Model" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
