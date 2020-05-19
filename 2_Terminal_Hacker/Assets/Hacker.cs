@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class Hacker : MonoBehaviour {
 
-    // Game State
+	// Game State
 	int level;
-
 	enum Screen { MainMenu, Password, Win };
 	Screen currentScreen = Screen.MainMenu;
 
 	// Use this for initialization
-	void Start () {
-		ShowMainMenu ();
+	void Start() {
+		ShowMainMenu();
 	}
 
-    void ShowMainMenu ()
-    {
+	void ShowMainMenu()
+	{
 		Terminal.ClearScreen();
 		Terminal.WriteLine("What would you like to hack into?");
 		Terminal.WriteLine("Press 1 for local library");
@@ -26,44 +25,50 @@ public class Hacker : MonoBehaviour {
 		Terminal.WriteLine("Enter your selection here:");
 	}
 
-    void OnUserInput(string input)
+	void OnUserInput(string input)
     {
-		if (input == "menu")
-		{
-			ShowMainMenu();
-		}
-		else if (input == "1")
+        if (input == "menu")
         {
-			level = 1;
-			StartGame();
+            ShowMainMenu();
         }
-        else if (input == "2")
+        else if (currentScreen == Screen.MainMenu)
         {
-			level = 2;
-			StartGame();
-        }
-        else if (input == "3")
-        {
-			level = 3;
-			StartGame();
-        }
-		else if (input == "007")
-        {
-			Terminal.WriteLine("Please choose a valid level Mr. Bond");
-        }
-        else
-        {
-			Terminal.WriteLine("Please choose a valid level");
+            RunMainMenu(input);
         }
     }
 
-    void StartGame ()
+    private void RunMainMenu(string input)
     {
-		Terminal.WriteLine("You have chosen level " + level);
+        if (input == "1")
+        {
+            level = 1;
+            StartGame();
+        }
+        else if (input == "2")
+        {
+            level = 2;
+            StartGame();
+        }
+        else if (input == "3")
+        {
+            level = 3;
+            StartGame();
+        }
+        else if (input == "007")
+        {
+            Terminal.WriteLine("Please choose a valid level Mr. Bond");
+        }
+        else
+        {
+            Terminal.WriteLine("Please choose a valid level");
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+    void StartGame()
+	{
+		currentScreen = Screen.Password;
+		Terminal.WriteLine("You have chosen level " + level);
+		Terminal.WriteLine("Please enter your password: ");
+
 	}
 }
